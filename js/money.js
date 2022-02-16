@@ -11,3 +11,5 @@ const save = document.getElementById('save');
 const saveAmount = document.getElementById('save-amount');
 const Remaining = document.getElementById('rem-balance');
 const allInput = parseInt(document.querySelectorAll('input'));
+
+btnCalculate.addEventListener('click', calculateHandler); 
