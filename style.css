@@ -1,4 +1,18 @@
 #header-color {
     color: orange;
     text-align: center;
+    margin-bottom: 1em;
+    font-family:cursive;
+    font-weight: 800;
+}
+/* photo Measurement */
+.money-calculate-photo img{
+    height: 60%;
+    width: 50%;
+}
+#button-color{
+    background-color: pink;
+    font-weight: 800;
+    border-radius: 0.3em;
+    padding: 0.3em;
 }
