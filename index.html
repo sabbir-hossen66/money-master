@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <!-- headline start -->
+    <!-- 
     <header>
         <h1 id="header-color">Monthly Account</h1>
     </header>
     <!-- main start -->
-    <main class="flex-container">
+    <!-- <main class="flex-container">
         <section class="half-width">
             <div class="money-calculate-photo">
                 <img src="photo-2.jpg" alt="">
             </div>
         </section>
         <!-- input type set -->
-        <section class="half-width-right">
-            <div>
+    <!-- <section class="half-width-right"> -->
+    <!-- <div>
                 <h3>Income</h4>
                     <p>Income: <input type="text"></p>
                     <h3>Expenses</h3>
@@ -39,20 +39,85 @@
                     <h3>Blance:5000</h3>
                     <p> save: <input type="text">
                         % <button id="button-color">Save</button></p>
-                </h3>
-            </div>
+                </h3> -->
+    <!-- </div>
             <div class="footer-object">
                 <h4>Saving Amouont: 3000</h4>
                 <h4>Remaining Balance: 2000</h4>
 
+            </div> -->
+
+
+
+    <!-- </section>
+ 
+
+    </main>  -->
+
+
+    <section class="main">
+        <h1 class="heading-title">Monthly Account</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="photo-2.jpg" alt="">
             </div>
 
+            <div class="box box2">
+                <h1>Income</h1>
+                <!-- form start  -->
+                <div class="form">
+                    <p>income</p>
+                    <input type="text" id="income" value="10000">
+                </div>
+                <!-- form End  -->
+                <div class="section-2">
+                    <h1>Expenses</h1>
+                    <!-- form start  -->
+                    <div class="form">
+                        <p>Food</p>
+                        <input type="text" id="food" value="3000">
+                    </div>
+                    <!-- form End  -->
+                    <!-- form start  -->
+                    <div class="form">
+                        <p>Rent </p>
+                        <input type="text" id="rent" value="2000">
+                    </div>
+                    <!-- form End  -->
+                    <!-- form start  -->
+                    <div class="form">
+                        <p>Clothees</p>
+                        <input type="text" id="clothees" value="500">
+                    </div>
+                    <!-- form End  -->
+                </div>
+                <button id="calculate" class="calculate">Calculate</button>
+                <div class="content">
+                    <h3>Total Expreses: <span id="totoal-exprese">5000</span></h3>
+                    <h3>Balance:<span id="balance">4500</span></h3>
+                </div>
 
 
-        </section>
+                <div class="save">
+                    <p>Save</p>
+                    <input type="number" id="persent" value="20">
+                    <h1>%</h1> <button id="save">Save</button>
+                </div>
+
+                <p>Save Amount:<span id="save-amount">2000</span></p>
+                <p>Remaining Balance:<span id="rem-balance">2500</span></p>
 
 
-    </main>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script src="js/money.js"></script>
 </body>
 
 </html>
