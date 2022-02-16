@@ -1,3 +1,8 @@
+body{
+   margin: 0%;
+    text-align: justify;
+    padding: 0%;
+}
 #header-color {
     color: orange;
     text-align: center;
@@ -7,12 +12,37 @@
 }
 /* photo Measurement */
 .money-calculate-photo img{
-    height: 60%;
+    height: 80%;
     width: 50%;
+}
+.half-width-right{
+    background-color: rgba(199, 195, 195, 0.514);
+    text-align: center;
+    
+    
 }
 #button-color{
     background-color: pink;
     font-weight: 800;
     border-radius: 0.3em;
     padding: 0.3em;
+    color:  black;
+
 }
+.flex-container{
+    display: flex;
+  
+    justify-content: center;
+    
+}
+.half-width img{
+    display: 50%;
+}
+.footer-object{
+    font-size: 15px;
+    font-weight: 700;
+    font-family:unset;
+    text-align: center;
+}
+
+/* media query */
