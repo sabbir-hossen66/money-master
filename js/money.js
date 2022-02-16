@@ -12,4 +12,16 @@ const saveAmount = document.getElementById('save-amount');
 const Remaining = document.getElementById('rem-balance');
 const allInput = parseInt(document.querySelectorAll('input'));
 
-btnCalculate.addEventListener('click', calculateHandler); 
+btnCalculate.addEventListener('click', calculateHandler);
+
+function calculateHandler() {
+    let spendForFood = parseInt(food.value);
+    let spendForRent = parseInt(rent.value);
+    let spendForclothes = parseInt(clothes.value); value
+    let myIncome = parseInt(income.value);
+    let totalSpend = spendForFood + spendForclothes + spendForRent;
+    totoalExprese.innerText = totalSpend;
+    let newBlance = myIncome - totalSpend;
+    balance.innerText = newBlance;
+    return newBlance;
+}
