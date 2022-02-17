@@ -1,27 +1,70 @@
-const btnCalculate = document.getElementById('calculate');
-const income = document.getElementById('income');
-const food = document.getElementById('food');
-const rent = document.getElementById('rent');
-const clothes = document.getElementById('clothees');
-const totoalExprese = document.getElementById('totoal-exprese');
-const balance = document.getElementById('balance');
-const remBalance = document.getElementById('rem-balance');
-const persent = document.getElementById('persent');
-const save = document.getElementById('save');
-const saveAmount = document.getElementById('save-amount');
-const Remaining = document.getElementById('rem-balance');
-const allInput = parseInt(document.querySelectorAll('input'));
+/* id call */
+let income = document.getElementById('income');
+let btnCalculate = document.getElementById('calculate');
+let food = document.getElementById('food');
+let rent = document.getElementById('rent');
+let clothes = document.getElementById('clothes');
+let totalExpenses = document.getElementById('totoal-expenses');
+let balance = document.getElementById('balance');
+let remBalance = document.getElementById('rem-balance');
+let persent = document.getElementById('persent');
+let save = document.getElementById('save');
+let saveAmount = document.getElementById('save-amount');
+let Remaining = document.getElementById('rem-balance');
+let allInput = parseInt(document.querySelectorAll('input'));
 
+
+/* click handeler... */
 btnCalculate.addEventListener('click', calculateHandler);
 
+/* This is a function */
+
 function calculateHandler() {
+
+
     let spendForFood = parseInt(food.value);
     let spendForRent = parseInt(rent.value);
-    let spendForclothes = parseInt(clothes.value); value
+    let spendForClothse = parseInt(clothes.value);
     let myIncome = parseInt(income.value);
-    let totalSpend = spendForFood + spendForclothes + spendForRent;
-    totoalExprese.innerText = totalSpend;
-    let newBlance = myIncome - totalSpend;
-    balance.innerText = newBlance;
-    return newBlance;
-}
+
+
+
+    let totalSpend = spendForFood + spendForClothse + spendForRent;
+
+    totalExpenses.innerText = totalSpend;
+
+    let newBalance = myIncome - totalSpend;
+    balance.innerText = newBalance;
+
+    return newBalance;
+
+
+};
+
+
+save.addEventListener('click', saveMoney);
+
+function saveMoney() {
+
+
+    let myIncome = parseInt(income.value);
+    let numpersent = parseInt(persent.value);
+
+
+    let persentage = myIncome / 100;
+
+    let finulSaveAmmount = persentage * numpersent;
+
+    /* Error type messege */
+
+    if (finulSaveAmmount <= calculateHandler()) {
+        saveAmount.innerText = finulSaveAmmount;
+
+        Remaining.innerText = calculateHandler() - finulSaveAmmount;
+    }
+    else {
+        alert("sorry!! you don't have any sufficency blance")
+    };
+
+
+};
